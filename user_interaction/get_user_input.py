@@ -1,5 +1,4 @@
 import numpy as np
-
 def get_user_input():
     try:
         avg_sleep = float(input("Enter average sleep hours (per day): "))
