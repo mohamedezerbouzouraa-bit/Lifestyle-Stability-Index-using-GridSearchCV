@@ -8,7 +8,6 @@ def train_model(X, y, test_size=0.3, random_state=1):
     pipe_svc = Pipeline([
         ('scl', StandardScaler()),
         ('clf', SVC())])
-
     param_grid = [
         {'clf__kernel': ['linear'], 'clf__C': [0.01, 0.1, 1, 10]},
         {'clf__kernel': ['rbf'], 'clf__C': [0.01, 0.1, 1, 10], 'clf__gamma': [0.01, 0.1, 1]}
