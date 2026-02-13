@@ -8,6 +8,7 @@ print("Best CV Accuracy:", gs.best_score_)
 print("Best Hyperparameters:", gs.best_params_)
 print("Test Accuracy:", best_model.score(X_test, y_test))
 user_features = get_user_input()
+
 if user_features is not None:
     result = predict_user_stability(best_model, user_features)
     print("Your lifestyle is predicted to be", result)
